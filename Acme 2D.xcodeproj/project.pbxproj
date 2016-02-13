@@ -54,6 +54,7 @@
 		974829C41C6FCBDF0075307F /* Acme 2DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Acme 2DUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		974829C81C6FCBDF0075307F /* Acme_2DUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Acme_2DUITests.m; sourceTree = "<group>"; };
 		974829CA1C6FCBDF0075307F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		974829D61C6FCCAA0075307F /* Acme 2D.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Acme 2D.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 		9748299F1C6FCBDF0075307F /* Acme 2D */ = {
 			isa = PBXGroup;
 			children = (
+				974829D61C6FCCAA0075307F /* Acme 2D.entitlements */,
 				974829A01C6FCBDF0075307F /* AppDelegate.h */,
 				974829A11C6FCBDF0075307F /* AppDelegate.m */,
 				974829A61C6FCBDF0075307F /* ViewController.h */,
@@ -212,6 +214,12 @@
 				TargetAttributes = {
 					9748299C1C6FCBDF0075307F = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7QPZTLEJ7L;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					974829B81C6FCBDF0075307F = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -408,10 +416,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Acme 2D/Acme 2D.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Acme 2D/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gamerocketstudio.Acme-2D";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamerocketstudio.acme2Daimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -420,10 +430,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Acme 2D/Acme 2D.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Acme 2D/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gamerocketstudio.Acme-2D";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamerocketstudio.acme2Daimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
